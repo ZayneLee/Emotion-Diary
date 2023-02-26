@@ -25,7 +25,7 @@ const DiaryItem = ({ id, emotion, content, date }) => {
           `emotion_img_wrapper_${emotion}`,
         ].join(" ")}
       >
-        <img src={process.env.PUBLIC_URL + `assets/emotion${emotion}.png`} />
+        <img src={process.env.PUBLIC_URL + `assets/emotion${emotion}.png`} alt="error" />
       </div>
       <div onClick={goDetail} className="info_wrapper">
         <div className="diary_date">{strDate}</div>
